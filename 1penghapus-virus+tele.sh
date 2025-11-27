@@ -69,8 +69,8 @@ EXT=("pif" "vbs" "jar" "exe" "scr" "bat" "js" "cmd" "lnk")
 
 
 # ================== TELEGRAM SETTING ==================
-TELEGRAM_TOKEN="8567116861:AAGOVSfSeHiD9dJxC2X-Y63aCKUs3jkLTrQ"
-CHAT_ID="8463837263"
+TELEGRAM_TOKEN="TELEGRAM_TOKENMU_DISINI"
+CHAT_ID="CHAT_IDMU_DISINI"
 
 send_telegram() {
     MESSAGE="$1"
