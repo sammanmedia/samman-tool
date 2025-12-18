@@ -9,7 +9,7 @@
 # CTRL + C untuk keluar
 # ==========================
 
-API_KEY="AIzaSyC5QQ42WcA7UgoMe4LuBuoUs4jOUaZW0W4"
+API_KEY="API_KEY_KAMU"
 MODEL="gemini-2.5-flash-lite"
 
 # Warna ANSI
