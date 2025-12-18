@@ -16,7 +16,9 @@ while true; do
         4 "Ping Canggih + Log" \
         5 "Cek IP Saya + Log" \
         6 "Samba Mount & Unmount" \
-        7 "Port Scanner + Log" 2>&1 >/dev/tty)
+        7 "Port Scanner + Log" \
+        8 "Port Analisa + pcap" \
+        9 "Gemini AI CLI" 2>&1 >/dev/tty)
 
     RESPONSE=$?   # << kode tombol OK, Cancel, Help
     clear
@@ -42,6 +44,9 @@ while true; do
         5)  bash "$DIR/5ip-saya.sh" ;;
         6)  bash "$DIR/6samba-mount.sh" ;;
         7)  bash "$DIR/7port-scan.sh" ;;
-        8)  gnome-terminal -- bash -c "curl ifconfig.me; echo; read -p 'ENTER untuk keluar...'; exec bash" & ;;
+        8)  gnome-terminal -- bash -c "$DIR/8port-analisa.sh; exec bash" & ;;
+        9)  gnome-terminal -- bash -c "$DIR/9gemini.sh; exec bash" & ;;
+        10)  gnome-terminal -- bash -c "curl ifconfig.me; echo; read -p 'ENTER untuk keluar...'; exec bash" & ;;
+
     esac
 done
